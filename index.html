@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Replace the existing header and nav section with this -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="#" class="home-link">Home</a>
+                <a href="form.html">Write</a>
+            </div>
+            <div class="search-bar desktop-search">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.5 17.5L13.875 13.875M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z"
+                        stroke="#667085" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <input type="search" placeholder="Search articles...">
+            </div>
+
+            <!-- Mobile menu button -->
+            <button class="mobile-menu-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12H21M3 6H21M3 18H21" stroke="#667085" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Mobile search bar -->
+        <div class="mobile-search">
+            <div class="search-bar">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.5 17.5L13.875 13.875M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z"
+                        stroke="#667085" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <input type="search" placeholder="Search articles...">
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <h1 class="page-title">THE BLOG</h1>
+
+
+        <!-- Replace the recent-posts section with this -->
+        <section class="posts-section">
+            <h2>Recent blog posts</h2>
+            <div class="posts-layout">
+
+                <article class="main-post">
+                    <a href="article.html">
+                        <img src="resources/2.jpg" alt="Office workspace with chairs">
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span>Olivia Rhye</span>
+                                <span>• 1 Jan 2023</span>
+                            </div>
+                            <h3>Grid system for better Design User Interface</h3>
+                            <p>How do you create compelling presentations that wow your colleagues and impress your
+                                managers?</p>
+                            <div class="tags">
+                                <span class="tag">Design</span>
+                                <span class="tag">Research</span>
+                                <span class="tag">Presentation</span>
+                            </div>
+
+                        </div>
+                    </a>
+                </article>
+
+
+
+                <div class="side-posts">
+                    <article class="side-post">
+                        <img src="resources/12.jpg" alt="Team working on laptops">
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span>Phoenix Baker</span>
+                                <span>• 1 Jan 2023</span>
+                            </div>
+                            <h3>Migrating to Linear 101</h3>
+                            <p>Linear helps streamline software projects, sprints, tasks, and bug tracking.</p>
+                            <div class="tags">
+                                <span class="tag">Design</span>
+                                <span class="tag">Research</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="side-post">
+                        <img src="resources/7.jpg" alt="Design sketches">
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span>Lana Steiner</span>
+                                <span>• 1 Jan 2023</span>
+                            </div>
+                            <h3>Building your API Stack</h3>
+                            <p>The rise of RESTful APIs has been met by a rise in tools for creating and testing them.
+                            </p>
+                            <div class="tags">
+                                <span class="tag">Design</span>
+                                <span class="tag">API</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="all-posts">
+            <h2>All blog posts</h2>
+            <div class="posts-grid">
+                <article class="post-card">
+                    <img src="resources/7.jpg" alt="Mountain landscape">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span>Alec Whitten</span>
+                            <span>• 1 Jan 2023</span>
+                        </div>
+                        <h3>Bill Walsh leadership lessons</h3>
+                        <p>Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Management</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <img src="resources/5.jpg" alt="Mountain landscape">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span>Alec Whitten</span>
+                            <span>• 1 Jan 2023</span>
+                        </div>
+                        <h3>James leadership lessons</h3>
+                        <p>Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Management</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <img src="resources/8.jpg" alt="Mountain landscape">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span>Alec Whitten</span>
+                            <span>• 1 Jan 2023</span>
+                        </div>
+                        <h3>Good efforts</h3>
+                        <p>Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Management</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Additional post cards -->
+            </div>
+        </section>
+
+        <nav class="pagination">
+            <div class="page-numbers">
+                <span class="current">1</span>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <span>...</span>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">10</a>
+            </div>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2023</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Email</a>
+                <a href="#">RSS feed</a>
+                <a href="#">Add to Feedly</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

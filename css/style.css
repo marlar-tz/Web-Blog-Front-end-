@@ -1,0 +1,416 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #6941C6;
+    --text-color: #333333;
+    --gray-100: #F9FAFB;
+    --gray-200: #EAECF0;
+    --gray-500: #667085;
+    --gray-900: #101828;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+/* Header styles */
+/* Add these new styles for the navbar and search bar */
+/* Add or update these styles */
+header {
+    border-bottom: 1px solid var(--gray-200);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.search-bar {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    /* This will move the search bar to the left */
+
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+    font-size: 0.875rem;
+    color: var(--gray-900);
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 4px rgba(105, 65, 198, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--gray-500);
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--gray-900);
+}
+
+.nav-links .home-link {
+    background-color: var(--gray-500);
+    border-radius: 6px;
+    padding: 10px 12px;
+    color: white;
+    /* Adding this to ensure text is visible on darker background */
+
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.mobile-search {
+    display: none;
+    padding: 1rem 0;
+}
+
+
+
+/* Add some basic CSS variables if not already defined */
+:root {
+    --gray-200: #EAECF0;
+    --gray-500: #667085;
+    --gray-900: #101828;
+    --secondary-color: #6941C6;
+}
+
+
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Add these styles to maintain consistent link color */
+a[href="article.html"] {
+    text-decoration: none;
+    color: inherit;
+    /* This will keep the default text color */
+}
+
+a[href="article.html"]:visited {
+    color: inherit;
+    /* This ensures visited links keep the same color */
+}
+
+a[href="article.html"]:hover {
+    color: inherit;
+    /* This ensures hover state keeps the same color */
+}
+
+.page-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+/* Featured posts section */
+.featured-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.featured-post {
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.featured-post img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.post-meta {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+    margin-bottom: 0.5rem;
+}
+
+.tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tag {
+    padding: 0.25rem 0.75rem;
+    background-color: var(--gray-100);
+    border-radius: 16px;
+    font-size: 0.875rem;
+}
+
+
+/* recent posts section */
+.posts-section {
+    margin: 4rem 0;
+}
+
+.posts-layout {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.main-post {
+    /*border: 1px solid var(--gray-200);*/
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.main-post img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.side-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.side-post {
+    /*border: 1px solid var(--gray-200);*/
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.side-post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+/* Posts grid */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.post-card {
+    /*border: 1px solid var(--gray-200);*/
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.post-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.page-numbers {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.page-numbers a,
+.page-numbers span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+    font-size: 0.875rem;
+    color: #667085;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.page-numbers a:hover {
+    background-color: #F8FAFC;
+    color: #0F172A;
+}
+
+.page-numbers .current {
+    background-color: #F8FAFC;
+    color: #0F172A;
+    font-weight: 500;
+}
+
+.page-numbers .dots {
+    color: #667085;
+}
+
+
+
+.pagination button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--gray-500);
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid var(--gray-200);
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: var(--gray-500);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    .desktop-search {
+        display: none;
+    }
+
+    .mobile-search {
+        display: block;
+        padding: 1rem 0;
+        border-top: 1px solid var(--gray-200);
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        margin-left: 0rem;
+        display: none;
+    }
+
+    /* Optional: Show nav-links when mobile menu is active */
+    .nav-links.active {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: white;
+        padding: 1rem;
+        border-top: 1px solid var(--gray-200);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .posts-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .side-posts {
+        gap: 1rem;
+    }
+
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
+
+/* Add a mobile search bar that appears at the top of the main content */
+@media (max-width: 968px) {
+    main {
+        padding-top: 1rem;
+    }
+
+    .mobile-search {
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    .mobile-search .search-bar {
+        max-width: 100%;
+    }
+
+
+}
